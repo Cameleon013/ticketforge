@@ -1,0 +1,19 @@
+{
+  "name": "ticketforge",
+  "version": "0.1.0",
+  "private": false,
+  "description": "A Discord.js ticket workflow with persistent ticket metadata.",
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "start": "node --env-file=.env src/bot.js",
+    "register": "node --env-file=.env src/register-commands.js",
+    "test": "node --test",
+    "check": "node --check src/bot.js && node --check src/store.js && node --check src/tickets.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.19.3"
+  }
+}
